@@ -4,7 +4,7 @@ import { base } from '$app/paths'
 </script>
 
 <img
-    src="{base}/emote/{emote}.webp"
+    src={base+"/emote/"+{emote}+".webp"}
     title="{emote}"
     alt=":{emote}:"
 >
