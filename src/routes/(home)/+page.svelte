@@ -4,6 +4,10 @@ import svelte_book from '$lib/images/Koume_Shirasaka_Holding_Svelte_Programming_
 import Emote from '$lib/Emote.svelte';
 </script>
 
+<svelte:head>
+	<title>Yutsite</title>
+</svelte:head>
+
 <section class="article" id="intro" style="color: var(--lavender-pink);">
     <div class="article_header">
         <img class="article_img" src={hello} alt="Anime girl">
