@@ -7,7 +7,7 @@
     <img src={base + "/emote/BocchiExistentialCrisis.webp"} alt="" />
     <p>
         Looks like this page doesn't exist (yet and probably never), You can go
-        to the homepage by clicking <a href="/">here</a>
+        to the homepage by clicking <a href={base}>here</a>
     </p>
 </div>
 

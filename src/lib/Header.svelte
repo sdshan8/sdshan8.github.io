@@ -1,8 +1,12 @@
+<script>
+    import { base } from "$app/paths";
+</script>
+
 <header>
-    <a href="/"><i class="bi bi-house"></i> Home</a>
+    <a href={base}><i class="bi bi-house"></i> Home</a>
     <!-- <a href="/about"><i class="bi bi-info-circle"></i> About</a>
     <a href="/projects"><i class="bi bi-code-slash"></i> Projects</a> -->
-    <a href="/social"><i class="bi bi-chat"></i> Socials</a>
+    <a href={base + "/social"}><i class="bi bi-chat"></i> Socials</a>
 </header>
 <style>
 header {
