@@ -2,7 +2,7 @@
 import Emote from '$lib/Emote.svelte';
 import { base } from "$app/paths";
 const hello = base + '/images/hello.webp';
-import svelte_book = base + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'
+const svelte_book = base + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'
 </script>
 
 <svelte:head>
