@@ -7,7 +7,7 @@
     const name = profile.name || "YutsuCard";
     const avatar = base + profile.pic || `${base}/icons/appple-touch-icon.png`;
     const username = profile.username || "unknown";
-    const link = profile.link || "https://sdshan8.github.io";
+    const link = profile.link || false;
     const bio = profile.bio || "";
 </script>
 
@@ -15,7 +15,7 @@
     <div class="con" style:background-color={bgColor}>
         <div style="display:flex;flex-grow:1">
             {#if link}
-                <a style="all:unset" target="_blank" href={link}>
+                <a target="_blank" href={link}>
                     <img class="pfp" src={avatar} alt="{name}'s Profile Pic" />
                 </a>
             {:else}
@@ -24,15 +24,19 @@
 
             <div class="info">
                 {#if link}
-                    <a style="all:unset" target="_blank" href={link}>
+                    <a target="_blank" href={link}>
                         <b class="name">{name}</b>
                     </a>
-                    <a style="all:unset" target="_blank" href={link}>
-                        <span class="username">{username}</span>
+                    <a target="_blank" href={link}>
+                        <span class="username">@{username}</span>
                     </a>
                 {:else}
-                    <b class="name">{name}</b>
-                    <span class="username">{username}</span>
+                    <div>
+                        <b class="name">{name}</b>
+                    </div>
+                    <div>
+                        <span class="username">@{username}</span>
+                    </div>
                 {/if}
             </div>
         </div>
@@ -41,10 +45,14 @@
 </div>
 
 <style>
+    a {
+        color: unset;
+        text-decoration: unset;
+    }
     .profile {
         border: 0.5px solid hsl(259, 12%, 50%);
         border-radius: 20px;
-        margin-top: 0.2rem;
+        margin: 1rem 0;
         min-width: 350px;
         background-size: cover;
         background-position: center;
@@ -53,7 +61,7 @@
         display: flex;
         padding: 0.5rem;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 19px;
     }
     .pfp {
         flex-shrink: 0;
@@ -67,10 +75,14 @@
         flex-direction: column;
         font-size: 16px;
         margin-bottom: 0.2rem;
-        margin-left: 0.2rem;
+        margin-left: 0.3rem;
     }
     .bio {
         font-size: 0.8em;
-        margin-left: 0.3rem;
+        padding: 0.3rem;
+    }
+    .username {
+        opacity: 99%;
+        font-size: 0.9em;
     }
 </style>
