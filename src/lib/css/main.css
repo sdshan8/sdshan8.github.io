@@ -3,11 +3,15 @@
 :root {
     /* CSS HSL */
     --raisin-black: hsl(258, 12%, 17%);
+    --raisin-dark-gray: hsl(270, 7%, 20%);
     --raisin-gray: hsla(259, 12%, 50%, 1);
     --raisin-gray-50: hsla(259, 12%, 50%, .5);
     --vivid-sky-blue: hsla(210, 75%, 73%, 1);
+    --vivid-sky-blue-50: hsla(210, 75%, 73%, .5);
     --lavender-pink: hsla(337, 50%, 80%, 1);
+    --lavender-pink-50: hsla(337, 50%, 80%, .5);
     --lavender-orange: hsla(32, 64%, 79%, 1);
+    --lavender-orange-50: hsla(32, 64%, 79%, .5);
     --lavender-blue: hsla(259, 78%, 83%, 1);
     --lavender-blue-50: hsla(259, 78%, 83%, 0.5);
     --light-green: hsla(121, 90%, 81%, 1);
@@ -16,7 +20,11 @@
 
     --backgroung: var(--raisin-black);
     --foreground: var(--nyanza);
-    --header-accent: var(--lavender-blue)
+    --header-accent: var(--lavender-blue);
+
+    --footer-accent: var(--lavender-blue-50);
+    --footer-link: var(--vivid-sky-blue-50);
+    --footer-bg: var(--raisin-dark-gray);
 }
 
 html, body {
