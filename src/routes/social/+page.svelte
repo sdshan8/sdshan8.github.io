@@ -31,6 +31,7 @@ const socials = {
             bg: "/pfps/discord/Hibiki146_banner.jpg",
             bgColor: "#00000088",
             username: "hibiki146",
+            link: "https://discordid.netlify.app/?id=1043219924962783262",
             bio: "He/Him | 19 | Kiana Simp | Likes Coding sometimes | AyuSetsu is life | likes cute things | Watch/Read DaL"
         }
     },
@@ -75,8 +76,8 @@ const socials = {
 #socials {
     margin: auto;
     max-width: 800px;
-    /* padding: 1em; */
-    height: 100%;
+    height: 96%;
+    padding: 0 2%;
 }
 h2 {
     text-align: center;
