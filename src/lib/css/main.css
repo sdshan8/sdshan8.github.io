@@ -46,25 +46,4 @@ p {
     height: auto;
     width: 160px;
 }
-header {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-}
-
-header > a {
-    color: var(--header-accent);
-    justify-content: center;
-    flex-basis: 100%;
-    display: flex;
-    padding: 1em 1em;
-    transition: background-color 200ms, color 200ms, flex-basis 200ms;
-}
-
-header > a:hover {
-    flex-basis: 150%;
-    color: var(--backgroung);
-    background-color: var(--header-accent);
-}
-
 
