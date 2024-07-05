@@ -42,6 +42,7 @@ const svelte_book = base + '/images/Koume_Shirasaka_Holding_Svelte_Programming_L
     flex-wrap: no-wrap;
     height: min-content;
     margin-top: 1rem;
+    text-wrap: pretty;
 }
 article {
     z-index: 1;
@@ -54,9 +55,9 @@ article {
     display: flex;
 }
 .article_img {
-    overflow: hidden;
     max-width: calc(100px - 1em);
-    max-height: calc(100px - 1em);
+    height: fit-content;
+    aspect-ratio: 1;
     margin: .5em;
     border-radius: 10%;
     border: 1.5px solid var(--raisin-gray-50);
