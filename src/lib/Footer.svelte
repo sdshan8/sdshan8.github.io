@@ -5,13 +5,12 @@
 footer {
     width: 100%;
     height: 2rem;
-    display: flex;
     font-size: smaller;
     background-color: var(--footer-bg);
     color: var(--footer-accent);
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
+    display: grid; place-content: center;
+    text-align: center;
+    word-break: break-all;
 }
 a {
     color: var(--footer-link);
