@@ -1,10 +1,10 @@
 <script>
 export let emote = "BocchiLooksAway"
-import { base } from '$app/paths'
+import { assets } from '$app/paths'
 </script>
 
 <img
-    src={base + "/emote/" + emote + ".webp"}
+    src={ assets + "/emote/" + emote + ".webp"}
     title="{emote}"
     alt=":{emote}:"
 >

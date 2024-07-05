@@ -1,12 +1,20 @@
 <script>
 import Emote from '$lib/Emote.svelte';
-import { base } from "$app/paths";
-const hello = base + '/images/hello.webp';
-const svelte_book = base + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'
+import { home_page } from '$lib/config.js'
+import { assets } from "$app/paths";
+
+const page = home_page;
+
+const hello = assets + '/images/hiura.jpeg';
+const svelte_book = assets + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'
 </script>
 
 <svelte:head>
-	<title>Yutsite</title>
+    <meta property="og:title" content={page.name} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={page.description} />
+    <meta property="og:image" content={assets + page.image} />
+	<title>{page.name}</title>
 </svelte:head>
 
 <section class="article" id="intro" style="color: var(--lavender-pink);">

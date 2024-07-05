@@ -1,5 +1,13 @@
+const home_page = {
+    name: "Yutsite",
+    description: "Welcome to My website I guess",
+    image: "/images/pages/home.webp"
+}
+
 const social_page = {
+    name: "YutSocial",
     description: "So this is the page in which I will put all my socials",
+    image: "/images/pages/social.webp",
     emote: "BocchiExistentialCrisis",
     socials: [
         {
@@ -59,4 +67,4 @@ const social_page = {
     ]
 }
 
-export { social_page }
+export { social_page, home_page }

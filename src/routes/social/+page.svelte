@@ -2,12 +2,17 @@
 import Emote from '$lib/Emote.svelte';
 import Profile from '$lib/Profile.svelte';
 import { social_page } from '$lib/config.js'
+import { assets } from "$app/paths";
 
-
+const page = social_page
 </script>
 
 <svelte:head>
-    <title>YutSocial</title>
+    <meta property="og:title" content={page.name} />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content={page.description} />
+    <meta property="og:image" content={assets + page.image} />
+	<title>{page.name}</title>
 </svelte:head>
 
 <div id="socials">

@@ -1,11 +1,11 @@
 <script>
     export let profile;
-    import { base } from '$app/paths'
+    import { assets } from '$app/paths'
 
-    const bg = profile.bg ? `url('${base + profile.bg}')` : "initial";
+    const bg = profile.bg ? `url('${assets + profile.bg}')` : "initial";
     const bgColor = profile.bgColor || "initial";
     const name = profile.name || "YutsuCard";
-    const avatar = base + profile.pic || `${base}/icons/appple-touch-icon.png`;
+    const avatar = assets + profile.pic || `${assets}/icons/appple-touch-icon.png`;
     const username = profile.username || "unknown";
     const link = profile.link || false;
     const bio = profile.bio || "";
