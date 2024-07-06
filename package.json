@@ -5,7 +5,7 @@
 	"scripts": {
 		"dev": "vite dev --host",
 		"build": "vite build",
-		"preview": "vite preview",
+		"preview": "vite preview --host",
 		"test": "vitest",
 		"lint": "eslint ."
 	},
@@ -23,5 +23,13 @@
 		"vite": "^5.0.3",
 		"vitest": "^1.2.0"
 	},
-	"type": "module"
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sdshan8/sdshan8.github.io.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sdshan8/sdshan8.github.io/issues"
+	},
+	"homepage": "https://sdshan8.github.io"
 }

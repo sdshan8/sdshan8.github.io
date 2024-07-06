@@ -1,23 +1,31 @@
 <script>
 import Emote from '$lib/Emote.svelte';
 import Profile from '$lib/Profile.svelte';
-import { social_page } from '$lib/config.js'
-import { assets } from "$app/paths";
+import { socials, pages } from '$lib/config.js'
+import { afterUpdate } from "svelte"
 
-const page = social_page
+const page = pages.social
 </script>
 
 <svelte:head>
-    <meta property="og:title" content={page.name} />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={page.description} />
-    <meta property="og:image" content={assets + page.image} />
-	<title>{page.name}</title>
+    <title>{page.name}</title>
+    <meta name="description" content={page.description}/>
+    <meta property="og:url" content={pages.url + page.path}/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content={page.name}/>
+    <meta property="og:description" content={page.description}/>
+    <meta property="og:image" content={page.image}/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:domain" content={pages.domain}/>
+    <meta property="twitter:url" content={pages.url + page.path}/>
+    <meta name="twitter:title" content={page.name}/>
+    <meta name="twitter:description" content={page.description}/>
+    <meta name="twitter:image" content={page.image}/>
 </svelte:head>
 
 <div id="socials">
-    <h2>{social_page.description}<Emote emote={social_page.emote} /></h2>
-    {#each social_page.socials as social }
+    <h2>{socials.description}<Emote emote={socials.emote} /></h2>
+    {#each socials.socials as social }
     <section id={social.name + "-socials"}>
         <p>So lets start with my Twitter <i class={'"bi bi-'+social.name+'"'}></i></p>
         {#each social.list as profile}
