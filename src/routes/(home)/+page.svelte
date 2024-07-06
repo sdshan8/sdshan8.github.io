@@ -1,20 +1,28 @@
 <script>
 import Emote from '$lib/Emote.svelte';
-import { home_page } from '$lib/config.js'
+import { pages } from '$lib/config.js'
 import { assets } from "$app/paths";
 
-const page = home_page;
+const page = pages.home;
 
 const hello = assets + '/images/hiura.jpeg';
 const svelte_book = assets + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'
 </script>
 
 <svelte:head>
-    <meta property="og:title" content={page.name} />
-    <meta property="og:type" content="website" />
-    <meta property="og:description" content={page.description} />
-    <meta property="og:image" content={assets + page.image} />
-	<title>{page.name}</title>
+    <title>{page.name}</title>
+    <meta name="description" content={page.description}/>
+    <meta property="og:url" content={pages.url + page.path}/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content={page.name}/>
+    <meta property="og:description" content={page.description}/>
+    <meta property="og:image" content={page.image}/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:domain" content={pages.domain}/>
+    <meta property="twitter:url" content={pages.url + page.path}/>
+    <meta name="twitter:title" content={page.name}/>
+    <meta name="twitter:description" content={page.description}/>
+    <meta name="twitter:image" content={page.image}/>
 </svelte:head>
 
 <section class="article" id="intro" style="color: var(--lavender-pink);">

@@ -1,13 +1,31 @@
-const home_page = {
-    name: "Yutsite",
-    description: "Welcome to My website I guess",
-    image: "/images/pages/home.webp"
-}
+import { base, assets } from "$app/paths"
 
-const social_page = {
-    name: "YutSocial",
+const url = new URL("http://sdshan8.github.io")
+
+
+const assets_url = url.origin + assets
+
+const pages = {
+    url: url.origin,
+    domain: url.host,
+    home: {
+        name: "YutSite",
+        description: "Welcome to My website I guess",
+        image: assets_url + "/images/pages/home.jpg",
+        icon: "house",
+        path: base + "/"
+    },
+    social: {
+        name: "YutSocial",
+        description: "So this is the page in which I will put all my socials",
+        image: assets_url + "/images/pages/social.jpg",
+        icon: "chat",
+        path: base + "/social"
+    }
+} 
+
+const socials = {
     description: "So this is the page in which I will put all my socials",
-    image: "/images/pages/social.webp",
     emote: "BocchiExistentialCrisis",
     socials: [
         {
@@ -67,4 +85,4 @@ const social_page = {
     ]
 }
 
-export { social_page, home_page }
+export { socials, pages }
