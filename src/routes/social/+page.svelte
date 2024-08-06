@@ -27,7 +27,7 @@ const page = pages.social
     <h2>{socials.description}<Emote emote={socials.emote} /></h2>
     {#each socials.socials as social }
     <section id={social.name + "-socials"}>
-        <p>So lets start with my Twitter <i class={'"bi bi-'+social.name+'"'}></i></p>
+        <p>{social.description}<i class={'"bi bi-'+social.name+'"'}></i></p>
         {#each social.list as profile}
             <Profile profile={profile}></Profile>
 	    {/each}
