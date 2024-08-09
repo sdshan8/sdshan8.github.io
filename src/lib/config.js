@@ -35,8 +35,8 @@ const socials = {
                 {
                     name: "Yutsu",
                     pic: "/pfps/twitter/SetsuYuki4.jpg",
-                    // bg: "/pfps/twitter/SetsuYuki4_banner.jpg",
-                    bgColor: "#7b357d88",
+                    bg: "/pfps/twitter/SetsuYuki4_banner.jpg",
+                    bgColor: "#00000088",
                     username: "SetsuYuki4",
                     link: "https://x.com/@SetsuYuki4",
                     bio: "He/Him | 19 | Kiana Simp | Likes Coding sometimes | AyuSetsu is life | likes cute things | Watch/Read DaL"
@@ -59,8 +59,8 @@ const socials = {
                 {
                     name: "Yutsu",
                     pic: "/pfps/discord/Hibiki146.jpg",
-                    bg: "/pfps/discord/Hibiki146_banner.jpg",
-                    bgColor: "#00000088",
+                    // bg: "/pfps/discord/Hibiki146_banner.jpg",
+                    bgColor: "#7b357d88",
                     username: "hibiki146",
                     link: "https://discordid.netlify.app/?id=1043219924962783262",
                     bio: "He/Him | 19 | Kiana Simp | Likes Coding sometimes | AyuSetsu is life | likes cute things | Watch/Read DaL"
