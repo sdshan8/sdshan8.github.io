@@ -35,8 +35,8 @@ const socials = {
                 {
                     name: "Yutsu",
                     pic: "/pfps/twitter/SetsuYuki4.jpg",
-                    bg: "/pfps/twitter/SetsuYuki4_banner.jpg",
-                    bgColor: "#00000088",
+                    // bg: "/pfps/twitter/SetsuYuki4_banner.jpg",
+                    bgColor: "#7b357d88",
                     username: "SetsuYuki4",
                     link: "https://x.com/@SetsuYuki4",
                     bio: "He/Him | 19 | Kiana Simp | Likes Coding sometimes | AyuSetsu is life | likes cute things | Watch/Read DaL"
