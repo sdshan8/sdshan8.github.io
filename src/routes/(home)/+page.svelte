@@ -3,7 +3,7 @@ import Emote from '$lib/Emote.svelte';
 import { pages } from '$lib/config.js'
 import { assets } from "$app/paths";
 
-const page = pages.home;
+const page = pages.list.home;
 
 const hello = assets + '/images/hiura.jpeg';
 const svelte_book = assets + '/images/Koume_Shirasaka_Holding_Svelte_Programming_Language.webp'

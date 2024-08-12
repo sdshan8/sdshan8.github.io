@@ -4,7 +4,7 @@ import Profile from '$lib/Profile.svelte';
 import { socials, pages } from '$lib/config.js'
 import { afterUpdate } from "svelte"
 
-const page = pages.social
+const page = pages.list.social
 </script>
 
 <svelte:head>
