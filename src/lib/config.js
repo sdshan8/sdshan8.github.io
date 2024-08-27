@@ -7,6 +7,7 @@ for(let item in pages.list) {
     pages.list[item].image = assets_url + pages.list[item].image
     pages.list[item].path = base + pages.list[item].path
 }
+
 const socials = {
     description: "So this is the page in which I will put all my socials",
     emote: "BocchiExistentialCrisis",
