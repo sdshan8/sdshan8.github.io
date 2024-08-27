@@ -1,12 +1,12 @@
 <script>
     import { base } from "$app/paths";
+    import { pages } from "$lib/config.js"
 </script>
 
 <header>
-    <a href={base + "/"}><i class="bi bi-house"></i> Home</a>
-    <!-- <a href={base + '/about'}><i class="bi bi-info-circle"></i> About</a>
-    <a href={base + '/projects'}><i class="bi bi-code-slash"></i> Projects</a> -->
-    <a href={base + "/social"}><i class="bi bi-chat"></i> Socials</a>
+    {#each Object.entries(pages.list) as [title, info]}
+    <a href={info.path}><i class={"bi bi-"+info.icon}></i> {info.name}</a>
+    {/each}
 </header>
 
 <style>
