@@ -2,7 +2,6 @@
 import Emote from '$lib/Emote.svelte';
 import Profile from '$lib/Profile.svelte';
 import { socials, pages } from '$lib/config.js'
-import { afterUpdate } from "svelte"
 
 const page = pages.list.social
 </script>
