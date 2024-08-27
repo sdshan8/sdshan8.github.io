@@ -16,6 +16,13 @@ const pages = {
             image: "/images/pages/social.jpg",
             icon: "chat",
             path: "/social"
+        },
+        about: {
+            name: "YuInfo",
+            description: "About me I guess",
+            image: "/images/pages/about.jpg",
+            icon: "info-circle",
+            path: "/about"
         }
     }
 } 
