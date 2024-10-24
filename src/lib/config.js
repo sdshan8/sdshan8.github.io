@@ -37,6 +37,22 @@ const socials = {
             ]
         },
         {
+            name: "bsky",
+            description: "Bluesky Accounts cause why not",
+            list: [
+                {
+                    name: "Yutsu",
+                    pic: "/pfps/bsky/Yutsu-desu.jpg",
+                    bg: "/pfps/bsky/Yutsu-desu_banner.jpg",
+                    bgColor: "#00000088",
+                    username: "yutsu-desu@bsky.social",
+                    link: "https://bsky.app/profile/yutsu-desu.bsky.social",
+                    bio: "He/Him | Kiana Simp | Likes Coding sometimes | not really active here | AyuSetsu is life | likes cute things"
+                }
+            ]
+        },
+ 
+        {
             name: "discord",
             description: "Lets move on to my Discord accounts",
             list: [
