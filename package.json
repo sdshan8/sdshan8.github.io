@@ -28,7 +28,7 @@
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/sdshan8/sdshan8.github.io.git"
+		"url": "http://github.com/sdshan8/sdshan8.github.io.git"
 	},
 	"bugs": {
 		"url": "https://github.com/sdshan8/sdshan8.github.io/issues"
